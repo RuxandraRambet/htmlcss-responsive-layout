@@ -1,0 +1,104 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'PT Sans', sans-serif;;
+}
+/* VARIABLES */
+:root {
+    --primary-color: #9792e4;
+    --secondary-color: #b5ddff;
+    --secondary-color-darker: #0084fd;
+    --color-free: #fdc15f;
+    --color-gray: #333333;
+}
+/* COMMON */
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.d_flex {
+    display: flex;
+}
+.align_center {
+    align-items: center;
+}
+.justify_between {
+    justify-content: space-between;
+}
+.white-color {
+    color: white;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.rounded {
+    border-radius: 1.25rem ;
+}
+
+/* BUTTONS */
+.btn {
+    all: unset;
+    display: inline-block;
+    padding: 0.6rem 3rem 0.7rem;
+}
+.btn.small {
+    background-color: white;
+    padding: 0.45rem 1rem;
+}
+/* HEADER */
+header {
+    background-color: var(--secondary-color-darker);
+    /* sticky */
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    margin-bottom: 50px;
+    padding: 1rem 2rem;
+}
+header .hamburger {
+    font-size: 1.5rem;
+}
+header .nav-menu {
+    display: none;
+}
+/*************************************************
+   RESPONSIVE
+ *************************************************/
+ /* TABLET */
+ @media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+ }
+/* DESKTOP */
+ @media screen and (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+    header .nav-menu {
+        display: block;
+    }
+    header .hamburger {
+        display: none;
+    }
+    header .nav-menu li {
+        margin-left: 2rem;
+    }
+    header .nav-menu li a {
+        font-size: 1.125rem;
+    }
+ }
+
+ /* DESKTOP LARGE */
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1150px;
+    }
+}
