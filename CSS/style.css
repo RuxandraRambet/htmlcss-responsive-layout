@@ -78,7 +78,13 @@ img {
     color: white;
     border-radius: 20px ;
 }
-
+.btn.big {
+    padding: 1.2rem 4.5rem 1.3rem;
+    font-size: 1.125rem;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 50px;
+}
 /* HEADER */
 header {
     background-color: var(--secondary-color-darker);
@@ -296,6 +302,57 @@ header .nav-menu {
 button i {
     margin-right: 10px;
 }
+/* Sixth section */
+#banner {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+}
+#banner .title1 {
+    margin-bottom: 1rem;
+    color: lightgray;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+}
+#banner .title2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem;
+}
+#banner .title3 {
+    color: var(--color-free);
+    font-size: 3.75rem;
+    margin-bottom: 1.5rem;
+}
+#banner p {
+    max-width: 520px;
+    margin: 0 auto 2rem;
+}
+#banner .copy {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+} .copy a {
+    text-decoration: underline;
+
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-gray);
+    padding: 2.5rem 2rem;
+    font-size: 0.875rem;
+}
+footer .content {
+    max-width: 420px;
+    margin: 0 auto;
+}
+footer .text1 {
+    margin-bottom: 4rem;
+}
+footer .text2 a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
 /*************************************************
    RESPONSIVE
  *************************************************/
@@ -367,7 +424,24 @@ button i {
         width: 100%;
         margin-top: 1rem;
     }
+    /* Sixth section */
 
+    #banner .title2 {
+        font-size: 3rem;
+    }
+    #banner .title3 {
+        font-size: 6rem;
+    }
+    #banner p {
+        font-size: 1.125rem;
+    }
+    #banner .copy {
+        font-size: 1rem;
+    }
+    /* Footer */
+    footer {
+        font-size: 1rem;
+    }
  }
 /* DESKTOP */
  @media screen and (min-width: 992px) {
